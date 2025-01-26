@@ -59,11 +59,11 @@ The Todo List application enables users to:
 ## Setup Instructions
 1. Clone the repository:
    ```bash
-   git clone https://github.com/<your-username>/todo-list-app.git
+   git clone https://github.com/RahulRmCoder/To-Do-List-App.git
    ```
 2. Navigate to the project directory:
    ```bash
-   cd todo-list-app
+   cd To-Do-List-App
    ```
 3. Install dependencies:
    ```bash
