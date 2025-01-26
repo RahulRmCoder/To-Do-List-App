@@ -1,5 +1,4 @@
 # To-Do-List-App
-# Todo List Application
 
 This project is a full-stack Todo List application that allows users to create, update, delete, and manage their tasks. The application includes user authentication to ensure each user's tasks are private and securely stored in a database.
 
