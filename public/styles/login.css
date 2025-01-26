@@ -1,0 +1,117 @@
+:root {
+    --primary-color: #4a4a4a;
+    --secondary-color: #6a89cc;
+    --background-color: #f4f4f4;
+    --white: #ffffff;
+    --transition-speed: 0.3s;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url("../assets/images/login.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.login-box, .signup-box {
+    background: #e4dfdf8d;
+    border-radius: 10px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+    padding: 40px;
+    transition: all var(--transition-speed) ease;
+}
+
+.login-box h2, .signup-box h2 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.login-box form, .signup-box form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-box input, .signup-box input {
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: all var(--transition-speed) ease;
+}
+
+.login-box input:focus, .signup-box input:focus {
+    outline: none;
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 0 2px rgba(106, 137, 204, 0.2);
+}
+
+.login-box button, .signup-box button {
+    background-color: #156f2d;
+    color: var(--white);
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all var(--transition-speed) ease;
+}
+
+.login-box button:hover, .signup-box button:hover {
+    background-color: #f4b806;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.login-box p, .signup-box p {
+    text-align: center;
+    margin-top: 20px;
+    color: var(--primary-color);
+}
+
+.login-box a, .signup-box a {
+    color: #0c21dc;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color var(--transition-speed) ease;
+}
+
+.login-box a:hover, .signup-box a:hover {
+    text-decoration: underline;
+}
+
+.error {
+    background-color: #ffdddd;
+    color: #ff0000;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+@media (max-width: 480px) {
+    .login-box, .signup-box {
+        padding: 20px;
+        margin: 0 15px;
+    }
+}
