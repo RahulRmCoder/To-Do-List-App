@@ -13,7 +13,7 @@ export function requireAuth(req, res, next) {
 // Session configuration
 export function configureSession(app) {
     app.use(session({
-        secret: '959792be34f9602658e0a0a8fcac2750533bf7b328e857c103bbc611a944f36fd81ec1a190e5a4544e7887496299c0878a8a3233da9f7d229fb9b481031c0eba', // Replace with a strong secret
+        secret: 'your_secret_key', // Replace with a strong secret
         resave: false,
         saveUninitialized: false,
         cookie: { 
